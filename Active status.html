@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>YOHpals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4B367C;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .version {
+            background-color: #261B46;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #F5F5F5;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+            border-right: 1px solid #E0E0E0;
+        }
+        .sidebar h3 {
+            font-size: 18px;
+            color: #4B367C;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .content h1 {
+            color: #4B367C;
+        }
+        .info-box {
+            background-color: #F7F4FC;
+            border: 1px solid #DDD;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #4B367C;
+        }
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+        }
+        .footer {
+            background-color: #4B367C;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">YOHpals</div>
+        <input class="form-control" inputype="text" placeholder="Search Yohpal documentation">
+        <button style="background-color: orange; color: white; border: none; padding: 10px; border-radius: 5px;">Get Free Guidance</button>
+    </div>
+    <div class="sidebar">
+        <h3>Support YOHpals</h3>
+        <ul>
+            <li class="dropdown">
+                <a href="#">ACCOUNT SETTINGS <span style="float: right;">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Login and security.html">Login and security</a></li>
+                    <li><a href="First Name Setting.html">First Name Setting</a></li>
+                    <li><a href="Last Name Setting.html">Last Name Setting</a></li>
+                    
+                    <li><a href="phonenumbersettings.html">Phone Number  Setting</a></li>
+                    <li><a href="Email Updating.html">Email Updating</a></li>
+                    <li><a href="Changing Password.html">Changing Password</a></li>
+    
+                    
+                    <li><a href="Data and Permission settings.html">Data and Permission settings</a></li>
+                    <li><a href="Location update.html">Location update</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+    
+                    
+                    <li><a href="Yohpal Account Termination.html">Yohpal Account Termination</a></li>
+      
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="APPEARANCE SETTINGS.html">APPEARANCE SETTINGS <span style="float: right;">&#9662;</span></a>
+               
+            </li>
+    
+            
+            <li class="dropdown">
+                <a href="#">NOTIFICATIONS SETTINGS <span style="float: right;">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="General Notifications.html">General Notifications</a></li>
+                    <li><a href="Messages Notifications.html">Messages Notifications</a></li>
+                </ul>
+            </li>
+    
+            
+            <li class="dropdown">
+                <a href="#">CHAT SETTINGS <span style="float: right;">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Active Status.html">Active Status</a></li>
+                    <li><a href="Favorites.html">Favorites</a></li>
+                    <li><a href="Phone Privacy.html">Phone Privacy</a></li>
+                    <li><a href="Group Privacy.html">Group Privacy.</a></li>
+                    <li><a href="Chat Wallpaper Setting.html">Chat Wallpaper Setting.</a></li>
+                    <li><a href="About Settings.html">About Settings</a></li>
+                </ul>
+            </li>
+    
+            
+            <li class="dropdown">
+                <a href="FONT SIZE SETTING.html">FONT SIZE SETTING <span style="float: right;">&#9662;</span></a>
+    
+            </li>
+    
+            
+    
+            <li class="dropdown">
+                <a href="Privacy Policy.html">PRIVACY POLICY <span style="float: right;">&#9662;</span></a>
+    
+            </li>
+    
+    
+            <li class="dropdown">
+                <a href="TERMS AND CONDITIONS.html">TERMS AND CONDITIONS.<span style="float: right;">&#9662;</span></a>
+    
+            </li>
+    
+    
+            
+            <li class="dropdown">
+                <a href="ABOUT APP.html">ABOUT APP<span style="float: right;">&#9662;</span></a>
+    
+            </li>
+            
+        </ul>
+    </div>    
+    <style>
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        .sidebar ul li {
+            position: relative;
+            margin: 10px 0;
+        }
+    
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            display: block;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .sidebar ul li a:hover {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+    
+        .dropdown-menu {
+            display: none;
+            position: center;
+            margin-top: 5px;
+            padding-right: 15px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #4B367C;
+            list-style: none;
+        }
+    
+        .dropdown-menu li {
+            margin: 5px 0;
+        }
+    
+        .dropdown-menu li a {
+            font-size: 13px;
+            color: #555;
+        }
+    
+        .dropdown-menu li a:hover {
+            color: #4B367C;
+        }
+    
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    
+
+    <div class="content">
+        <h1>YOHpals Documentation</h1>
+        <div class="info-box">
+            <p>
+                <b></b> Active Status
+                <br>
+                This setting lets you control whether others can see your active status. By Default the status is Offline.
+
+            </p>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
+                <div class="card-content">
+                    <h3>Card Title 1</h3>
+                    <p>Brief description about the card. This could include features or highlights.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
+                <div class="card-content">
+                    <h3>Card Title 2</h3>
+                    <p>Brief description about the card. This could include features or highlights.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
+                <div class="card-content">
+                    <h3>Card Title 3</h3>
+                    <p>Brief description about the card. This could include features or highlights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Yohpal. All rights reserved.</p>
+    </div>
+</body>
+</html>
