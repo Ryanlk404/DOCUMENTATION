@@ -7,160 +7,178 @@
     <title>YOHpals</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: margin-left 0.3s ease;
-}
-.header {
-    background-color: rgb(194, 38, 38);
-    color: white;
-    padding: 2px 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.header .version {
-    background-color: #6550a5;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-.content {
-    margin-left: 172px;
-    padding: 20px;
-}
-.content h1 {
-    color: #bb2124;
-}
-.info-box h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #4B367C;
-}
-.info-box p {
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 1.4;
-    font-family: Berlin Sans FB;
-    color: #000000;
-}
-.info-box {
-    background-color: #fae7e7dc;
-    border: 1px solid #420000;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-.card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 500px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.card img {
-    width: 100%;
-    height: auto;
-}
-.card-content {
-    padding: 15px;
-}
-.card-content h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-family: Book Antiqua;
-    color: #bb2124;
-}
-.card-content p {
-    font-size: 14px;
-    font-family: Bodoni MT;
-    color: #000000;
-}
-.footer {
-    background-color: #b91818;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 40px;
-}
-.form-control {
-    width: 350%;
-    max-width: 30%;
-    padding: 5px 10px;
-    border: 1px solid #020202;
-    border-radius: 4px;
-    font-size: 14px;
-    margin-bottom: 10px;
-    margin-right: 500px;
-}
-.what-s-new-button {
-    background-color: #584ad8;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 10px;
-}
+        .header {
+            background: linear-gradient(90deg, #bb2124, #420000);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.get-free-trial-button {
-    background-color: #f7b21f;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
-}
+        .header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
 
-.what-s-new-button:hover,
-.get-free-trial-button:hover {
-    background-color: #201010;
-}
-.search-input {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background-color: #e7e4e4;
-    color: #000000;
-    border-radius: 5px;
-    padding: 5px 10px;
-    max-width: 500px;
-}
+        .search-input {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 5px 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.search-input input {
-    flex: 1;
-border: none;
-outline: none;
-padding: 10px;
-color:#000000
-}
-   
+        .search-input input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .buttons button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .what-s-new-button {
+            background-color: #5a5ce3;
+            color: white;
+        }
+
+        .get-free-trial-button {
+            background-color: #f7a81e;
+            color: white;
+        }
+
+        .what-s-new-button:hover,
+        .get-free-trial-button:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #420000;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background: #eaeaea;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 28px;
+            color: #bb2124;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #fce8e8;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #bb2124;
+            margin-bottom: 20px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #420000;
+        }
+
+        .footer {
+            text-align: center;
+            background: #420000;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h2>YOHpals | Font Size</h2>
         <div class="search-input">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
             <input type="text" placeholder="Search YOHpals Font Size">
         </div>
         <div class="buttons">
-            <button class="what-s-new-button">What's new? →</button>
+            <button class="what-s-new-button">What's new?</button>
             <button class="get-free-trial-button">Get free trial</button>
         </div>
     </div>
@@ -242,92 +260,21 @@ color:#000000
             
         </ul>
     </div>
-    
-    <style>
-       .sidebar {
-    width: 150px;
-    background-color: #F5F5F5;
-    padding: 20px;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    border-right: 1px solid #E0E0E0;
-    transition: width 0.3s ease;
-}
-.sidebar.collapsed {
-    width: 0;  /* Collapse the sidebar completely */
-    padding: 0; /* Remove padding to prevent space from being left */
-    overflow: hidden; /* Prevent any overflow */
-}
-.sidebar.collapsed h3,
-.sidebar.collapsed ul {
-    display: none; /* Hide content like the header and list */
-}
-.sidebar h3 {
-    font-size: 18px;
-    color: #4B367C;
-    display: block;
-    transition: opacity 0.3s ease;
-}
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-.sidebar ul li {
-    margin: 10px 0;
-}
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    display: block;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-.sidebar ul li a:hover {
-    background-color: #ddd;
-    border-radius: 4px;
-}
-.sidebar ul li .dropdown-menu {
-    display: none;
-    position: center;
-    margin-top: 5px;
-    padding-right: 15px;
-    background-color: #f9f9f9;
-    border-left: 3px solid #bb2124;
-    list-style: none;
-}
-.sidebar ul li .dropdown-menu li a {
-    font-size: 13px;
-    color: #000000;
-}
-.sidebar ul li .dropdown-menu li a:hover {
-    color: #bb2124;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-</style>
-    
     <div class="content">
-        <h1>YOHpals Documentation</h1>
+        <h1>Welcome to YOHpals</h1>
         <div class="info-box">
-            <p>
-                <b></b> Font Size <br>
-                <br>
-                <b></b>Tap the font size icon to change the overall app font size. 
-            </p>
+            <p><b>Font Size:</b> Tap the font size icon to change the overall app font size.</p>
         </div>
         <div class="cards-container">
             <div class="card">
-                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
+                <img src="https://via.placeholder.com/300x150" alt="Feature Image">
                 <div class="card-content">
                     <h3>Card Title 1</h3>
                     <p>Brief description about the card. This could include features or highlights.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
+                <img src="https://via.placeholder.com/300x150" alt="Feature Image">
                 <div class="card-content">
                     <h3>Card Title 2</h3>
                     <p>Brief description about the card. This could include features or highlights.</p>
@@ -336,7 +283,7 @@ color:#000000
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2024 Yohpal. All rights reserved.</p>
+        <p>&copy; 2025 YOHpals. All rights reserved.</p>
     </div>
 </body>
 </html>

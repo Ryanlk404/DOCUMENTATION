@@ -13,12 +13,16 @@
     transition: margin-left 0.3s ease;
 }
 .header {
-    background-color: rgb(194, 38, 38);
-    color: white;
-    padding: 2px 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(90deg, #bb2124, #420000);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .header .logo {
     font-size: 24px;
@@ -31,11 +35,13 @@
 }
 
 .content {
-    margin-left: 172px;
+    margin-left: 220px;
     padding: 20px;
 }
 .content h1 {
+    font-size: 28px;
     color: #bb2124;
+    margin-bottom: 20px;
 }
 .info-box h3 {
     margin: 0;
