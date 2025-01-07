@@ -56,11 +56,11 @@
     color: #000000;
 }
 .info-box {
-    background-color: #fae7e7dc;
-    border: 1px solid #420000;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background: #fce8e8;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #bb2124;
+            margin-bottom: 20px;
 }
 .cards-container {
     display: flex;
@@ -70,13 +70,16 @@
     margin-top: 30px;
 }
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 500px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
 }
+.card:hover {
+            transform: translateY(-5px);
+        }
+
 .card img {
     width: 100%;
     height: auto;
@@ -287,12 +290,13 @@ color:#000000
     margin: 10px 0;
 }
 .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    display: block;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+            text-decoration: none;
+            color: #420000;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
 }
 .sidebar ul li a:hover {
     background-color: #ddd;
@@ -340,13 +344,6 @@ color:#000000
                 <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
                 <div class="card-content">
                     <h3>Card Title 2</h3>
-                    <p>Brief description about the card. This could include features or highlights.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/300x500" alt="Phone Screen">
-                <div class="card-content">
-                    <h3>Card Title 3</h3>
                     <p>Brief description about the card. This could include features or highlights.</p>
                 </div>
             </div>
